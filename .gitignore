@@ -1,4 +1,6 @@
-/node_modules/
-/lib/
-/*.log
-/.parcel-cache/
+node_modules/
+lib/
+*.log
+.parcel-cache/
+.clj-kondo/
+.lsp/
