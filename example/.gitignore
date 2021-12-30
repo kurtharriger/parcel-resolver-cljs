@@ -1,0 +1,12 @@
+/node_modules
+/target
+/dist
+/*.log
+/.shadow-cljs/
+/.clj-kondo/
+/.lsp/
+/.parcel-cache/
+/.nrepl-port
+/.calva
+/.idea
+.DS_Store

@@ -1,0 +1,6 @@
+
+{:source-paths ["src/cljs"]
+ :dependencies [[reagent "1.1.0"]]
+ :builds {:app {:output-dir "target/"
+                :target :npm-module}}}
+ 

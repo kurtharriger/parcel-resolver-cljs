@@ -1,0 +1,38 @@
+{
+  "name": "parcel-cljs-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "shadow-cljs watch app",
+    "compile": "shadow-cljs compile app",
+    "release": "shadow-cljs release app",
+    "html": "mkdir -p target && cp assets/index.html target/",
+    "serve": "yarn html && http-server target/",
+    "del": "rm -r target/*",
+    "build": "yarn release && yarn html && yarn serve"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "http-server": "^0.12.3",
+    "shadow-cljs": "^2.10.12"
+  },
+  "dependencies": {
+    "dayjs": "^1.10.7",
+    "lodash": "^4.17.21",
+    "parcel": "^2.0.1",
+    "parcel-plugin-externals": "^0.5.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sakura.css": "^1.3.1",
+    "shortid": "^2.2.16"
+  },
+  "alias": {
+    "cljs/app.main": "./target/app.main.js",
+    "cljs/app.lib": "./target/app.lib.js",
+    "project": "./src/"
+  }
+}

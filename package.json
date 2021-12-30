@@ -1,0 +1,26 @@
+{
+  "name": "parcel-resolver-cljs",
+  "version": "0.0.1",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kurtharriger/parcel-resolver-cljs.git"
+  },
+  "main": "lib/CljsResolver.js",
+  "source": "src/CljsResolver.ts",
+  "scripts": {
+    "build": "parcel build"
+  },
+  "engines": {
+    "node": ">= 12.0.0",
+    "parcel": "^2.0.1"
+  },
+  "dependencies": {
+    "@parcel/logger": "^2.0.1",
+    "@parcel/plugin": "^2.0.1",
+    "parcel": "^2.0.1"
+  }
+}
